@@ -1,0 +1,45 @@
+Main Aim – Hello from Helen
+To create a timetable to use when revising using books
+Mission Statement –
+A tool for determining the timeframe needed in order that you can meet your reading goals
+
+Create a user interface –
+a. Select type of interface
+Design interface (colour/layout/appearance) –
+a. Select two option
+i. New project
+ii. On-going project
+b. Extension
+Create List of user actions (eg input book etc) / questions
+a. Questions (Initial)
+i. Name of the book
+ii. ISBN
+iii. No of pages
+iv. How many have you got?
+v. How many days do you want to read?
+vi.
+Create a function to do reading test for reading speed
+Input book details and find page length from amazon
+a. Investigate code snippets that can do this
+Create code for each item on user action list (Objective 4)
+Calculate and display reading timetable
+Create a weekly notification to allow user to update the app with their progress (ahead/behind or on schedule)
+Extension objectives:
+• option to create flashcards and notes
+• option to import reading list
+• option to import book (to allow app to calculate based on words rather than pages)
+
+Supplementary notes
+
+Investigate options and decide on most viable
+Brainstorm ideas for appearance
+Brainstorm ideas for actions, initial list below
+a. how any weeks to revise (initial input)
+b. how many hours to revise per day (initial input)
+c. how many days/week (initial input)
+d. ahead or behind schedule (weekly input)
+Find text to use for test – approx. 500 words. Do we want different types (easy/more complex)?
+Decide on what details user should input (book title? ISBN?)
+Plan the code
+Find code snippets methods that do this
+This needs to be done initially and again after weekly update from objective 8
