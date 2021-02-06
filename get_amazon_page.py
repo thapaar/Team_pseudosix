@@ -12,10 +12,10 @@ urllist = [
 for url in urllist:
 	r = requests.get(url)
 
-	soup = BeautifulSoup(r.text)
+	soup = BeautifulSoup(r.text, features="lxml")
 	tmp = ''
 	for line in soup.get_text().split():
 		if line.lower() == 'pages' and tmp.isdigit():
-			print tmp,line, ' - ',soup.html.head.title.text
+			print(tmp,line, ' - ',soup.html.head.title.text)
 		else:
 			tmp = line
