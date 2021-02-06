@@ -1,4 +1,5 @@
 import time
+
 # retrieve time at start (seconds since 1 Jan 1970)
 start = time.time()
 
