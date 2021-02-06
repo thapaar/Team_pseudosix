@@ -1,24 +1,31 @@
 import time
+import requests
 
-# retrieve time at start (seconds since 1 Jan 1970)
-start = time.time()
+getText 
 
-# give dummy value so can be changed later
-end = 3.0
+def main():
+    # retrieve time at start (seconds since 1 Jan 1970)
+    start = time.time()
 
-# display users text sample
-print("Paragraph of text goes here \nplease press s when done")
+    # give dummy value so can be changed later
+    end = 3.0
 
-wordCount = 10 # for arguements sake  
+    # display users text sample
+    print("Paragraph of text goes here \nplease press s when done")
 
-# wait for user to press key
-keypress = input()
+    wordCount = 10 # for arguements sake  
 
-if keypress == "s": # if user enters s 
-    end = time.time() # retrieve seconds at emd
-    lapsed = end - start # take difference
-    lapsed = round(lapsed) # round and print result
-    wordsPerMin = wordCount/ lapsed
-    print(wordsPerMin)
+    # wait for user to press key
+    keypress = input()
 
-    # could use a command like fillTextBox rather than print if using flask
+    if keypress == "s": # if user enters s 
+        end = time.time() # retrieve seconds at emd
+        lapsed = end - start # take difference
+        lapsed = round(lapsed) # round and print result
+        wordsPerMin = wordCount/ lapsed
+        print(wordsPerMin)
+
+        # could use a command like fillTextBox rather than print if using flask
+
+if __name__ == "__main__":
+    main()
