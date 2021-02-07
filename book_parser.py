@@ -28,7 +28,7 @@ def newStyle(url):
     firstClose = titleSection.find(">") +1
     firstOpen = titleSection.find("<")
     title = titleSection[firstClose:firstOpen]
-    print(pageCount , title)
+    return [pageCount , title]
 
 def oldStyle(url):
     # pretend scraper is firefox 
@@ -54,7 +54,8 @@ def oldStyle(url):
     titleSection = titleSection.strip("<title>")
     titleEnd = titleSection.find("- Go")
     title = titleSection[0:titleEnd]
-    print(pageCount, title)
+    # print(pageCount, title)
+    return [pageCount, title]
 
 def main():
     url = "https://books.google.co.uk/books/about/War_and_Peace.html?id=s-OQ2yHDIMQC&redir_esc=y"
