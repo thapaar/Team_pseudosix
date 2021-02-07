@@ -57,6 +57,12 @@ def oldStyle(url):
     # print(pageCount, title)
     return [pageCount, title]
 
+def getInfo(url):
+    if "books.google" in url:
+        return oldStyle(url)
+    else:
+        return newStyle(url)
+
 def main():
     url = "https://books.google.co.uk/books/about/War_and_Peace.html?id=s-OQ2yHDIMQC&redir_esc=y"
     # url = "https://www.google.co.uk/books/edition/A_Tale_of_Two_Cities/5EIPAAAAQAAJ?hl=en&gbpv=0&bsq=tale%20of%20two%20cities"
