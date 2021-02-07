@@ -1,0 +1,43 @@
+{%	extends 'base.html'	%}
+
+Calling the 
+{% block head %} 
+	<title>Welcome Page</title>
+{% endblock %}
+
+{% block body %}
+<div class="container d-flex justify-content-center">
+    <div class="d-flex flex-column justify-content-between">
+        <div class="card mt-3 p-5">
+            <div class="logo mb-3">Logo goes in here<img src="/https://imgur.com/zydrQCr.png"></div>
+            <div>
+                <p class="mb-1">Sign In</p>
+                <h4 class="mb-5 text-white">Hi there nice to see you again</h4>
+            </div>
+<!-- Login Button  -->
+            <button id="log-button" class="btn btn-primary btn-lg">
+            	<small>Already signed up?</small><span>&nbsp;Log in</span>
+            </button>
+        </div>
+<!-- Email Text-Box -->
+        <div class="card two bg-white px-5 py-4 mb-3">
+            <div class="form-group"><input type="email" class="form-control" id="mail" required><label class="form-control-placeholder" for="mail">Email</label></div>
+ <!-- Password Text-box          -->
+            <div class="form-group">
+            	<input type="password" class="form-control" id="password" required>
+            	<label class="form-control-placeholder" for="password">Password</label>
+            </div> 
+
+<!-- Sign-Up Button -->
+            <button class="btn btn-primary btn-block btn-lg mt-1 mb-2">
+            	<span>Get started<i class="fas fa-long-arrow-alt-right ml-2"></i></span>
+            </button>
+
+            <div class="social">
+            	<button class="btn btn-primary" id="twitter">twitter</button>
+            	<button class="btn btn-primary" id="facebook">facebook</button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

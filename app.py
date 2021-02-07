@@ -1,4 +1,3 @@
-#Getting Flflask, render_template and request from flask
 from flask import Flask, render_template, request
 
 #Declaring the App
@@ -6,5 +5,14 @@ app = Flask(__name__)
 
 #Starting the app route 
 @app.route('/')
-def main():
-	return render_template('template/index.html')
+def home():
+	return render_template('index.html')
+
+# Retrieves the login & register view
+@app.route('/register')
+def register():
+	return render_template('register.html')
+
+
+if __name__ == '__main__':
+    app.run(debug=True)
