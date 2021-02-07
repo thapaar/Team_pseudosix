@@ -9,7 +9,7 @@ def home():
 	return render_template('index.html')
 
 # Retrieves the login & register view
-@app.route('/register')
+@app.route('/templates')
 def register():
 	return render_template('register.html')
 
