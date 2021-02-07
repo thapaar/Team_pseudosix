@@ -22,7 +22,7 @@ def printBook():
 def myForm():
     return render_template("form.html")
 
-@app.route('/form', methods=['POST'])
+@app.route('/form', methods=['POST', "GET"])
 def handleForm():
     url = request.form["text"]
     pages, title = getInfo(url)
