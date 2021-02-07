@@ -27,7 +27,7 @@ def handleForm():
     url = request.form["text"]
     pages, title = getInfo(url)
     msg = title + " has " + pages + " pages"
-    return msg
+    return render_template("form.html" , message = msg)
 
 if __name__ == "__main__":
     app.run()
